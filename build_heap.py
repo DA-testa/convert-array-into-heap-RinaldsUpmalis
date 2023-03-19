@@ -49,9 +49,9 @@ def main():
             return
         with open(filename, 'r') as file:
             text = file.read()
-            #lines = text.split('\n')
-            n = int(text[0])
-            data = list(map(int, text[1].split()))
+            lines = text.split('\n')
+            n = int(lines[0])
+            data = list(map(int, lines[1].split()))
     assert len(data) == n
 
     # print(compute_height(n, parents))
